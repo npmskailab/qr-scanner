@@ -3,7 +3,7 @@ import { QrReader } from "react-qr-reader";
 import styles from "../styles/Home.module.css";
 
 function Scan() {
-  const [data, setData] = useState("No result");
+  const [data, setData] = useState("");
 
   return (
     <div className={styles.container}>
@@ -20,9 +20,9 @@ function Scan() {
           } 
         }
         constraints	={{ facingMode:  "environment"  }}
-          style={{ width: "40%", height: "40%" }}
+          style={{ width: "90%", height: "50%" }}
         />
-        <p>{data}</p>
+        <div>{data}</div>
       </div>
     </div>
   );
