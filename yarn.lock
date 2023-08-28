@@ -1191,6 +1191,11 @@
     "@typescript-eslint/types" "5.10.1"
     eslint-visitor-keys "^3.0.0"
 
+"@vkruglikov/react-telegram-web-app@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/@vkruglikov/react-telegram-web-app/-/react-telegram-web-app-2.1.1.tgz"
+  integrity sha512-rIDAPVVDiZ7ektbTkjWmP88+xokYuE2Gjt5NCMkthsqcv1vzc9fUQOjvfFXA7i6Kob+5308acv2S3E3TdHR43A==
+
 "@zag-js/dom-query@0.10.5":
   version "0.10.5"
   resolved "https://registry.npmjs.org/@zag-js/dom-query/-/dom-query-0.10.5.tgz"

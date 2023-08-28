@@ -4,8 +4,14 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
 import { Button } from "@chakra-ui/react";
+import {
+  useScanQrPopup,
+  useShowPopup,
+} from '@vkruglikov/react-telegram-web-app';
 
 export default function Home() {
+  const [showQrPopup, closeQrPopup] = useScanQrPopup();
+  const showPopup = useShowPopup();
   // const [data, setData] = useState("");
   const scanClicked = () => {
     let params = {
@@ -30,7 +36,26 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to QR Point</h1>
         <hr height="1px" width="40%" />
-        <Button colorScheme="primary" onClick={scanClicked}>Scan QR Code</Button>
+        <Button
+            block
+            type="primary"
+            htmlType="button"
+            onClick={() =>
+              showQrPopup(
+                {
+                  text: 'Scan QR Code',
+                },
+                text => {
+                  closeQrPopup();
+                  showPopup({
+                    message: text,
+                  });
+                },
+              )
+            }
+          >
+            showScanQrPopup
+          </Button>
         <hr height="1px" width="40%" />
         <div className={styles.grid}>
           <Link href="/scan" className={styles.card}>
