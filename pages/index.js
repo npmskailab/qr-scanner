@@ -15,7 +15,6 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Qr Labs</h1>
         <hr height="1px" width="40%"/>
-
         <div className={styles.grid}>
           <Link href="/scan" className={styles.card}>
             <a>
