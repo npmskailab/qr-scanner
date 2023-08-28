@@ -13,12 +13,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Qr Labs</h1>
+        <h1 className={styles.title}>Welcome to QR Point</h1>
         <hr height="1px" width="40%"/>
         <div className={styles.grid}>
           <Link href="/scan" className={styles.card}>
             <a>
-              <h2>Scan QR Code</h2>
+              <h2>Start Scan</h2>
             </a>
           </Link>
         </div>
