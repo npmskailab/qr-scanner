@@ -18,13 +18,7 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/scan" className={styles.card}>
             <a>
-              <h2>Scan a qr code&rarr;</h2>
-            </a>
-          </Link>
-          {" "}
-          <Link href="/generate" className={styles.card}>
-            <a>
-              <h2> Generate a qr code&rarr;</h2>
+              <h2>Scan QR Code</h2>
             </a>
           </Link>
         </div>
