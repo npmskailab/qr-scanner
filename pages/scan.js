@@ -17,7 +17,6 @@ function Scan() {
             if (!!error) {
               console.info(error);
             }
-            
           } 
         }
         constraints	={{ facingMode:  "environment"  }}
