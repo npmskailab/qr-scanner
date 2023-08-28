@@ -6,7 +6,7 @@ import { TelegramWebAppContext } from "react-telegram-webapp";
 import Script from "next/script";
 
 export default function Home() {
-  //const [data, setData] = useState("");
+  // const [data, setData] = useState("");
   const scanClicked = function scanClicked() {
     let params = {
       text: "Scan QR code Nikabuy"
