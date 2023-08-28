@@ -2,8 +2,22 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import TelegramBot from "telegrambot";
 
 export default function Home() {
+  onst [data, setData] = useState("");
+  const scanClicked = function scanClicked() {
+    let params = {
+      text: "Scan QR code Nikabuy"
+    };
+    TelegramBot.WebApp.showScanQrPopup(params,getScanCode);
+  };
+
+  var getScanCode=function getScanCode(scan){
+    Telegram.WebApp.closeScanQrPopup();
+    setData(scan);
+    // getElement('inputBarcode').value = scan;
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -14,6 +28,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to QR Point</h1>
+        <div onClick={scanClicked}> Scan</div>
         <hr height="1px" width="40%"/>
         <div className={styles.grid}>
           <Link href="/scan" className={styles.card}>
@@ -22,6 +37,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
+        <div>{data}</div>
       </main>
 
       <footer className={styles.footer}>

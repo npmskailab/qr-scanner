@@ -14,7 +14,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-qr-code": "^2.0.3",
-    "react-qr-reader": "^3.0.0-beta-1"
+    "react-qr-reader": "^3.0.0-beta-1",
+    "telegrambot": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",
