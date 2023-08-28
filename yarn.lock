@@ -1661,6 +1661,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+telegram-webapps@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/telegram-webapps/-/telegram-webapps-0.0.5.tgz"
+  integrity sha512-/Dpe+O3OKVe0yvax4+XChRpKjAHtseuychaqaxgFG75PA99dik+mPnxQAgjE6m/McO+CYoW6wix8W5g1qn2axg==
+
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
