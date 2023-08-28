@@ -37,7 +37,6 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <div>{data}</div>
       </main>
 
       <footer className={styles.footer}>
